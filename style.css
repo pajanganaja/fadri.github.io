@@ -1,0 +1,154 @@
+@import 'https://fonts.googleapis.com/css?family=Luxurious Roman';
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('image/imagepage.png');
+    background-size: cover;
+}
+
+header {
+    font-family: "Luxurius Roman";
+    margin: 0 auto;
+	padding: 5em 3em;
+	text-align: center;
+    background: linear-gradient(to top, dodgerblue, green, dodgerblue);
+}
+
+header .logo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+footer {
+    font-family: Raleway;
+    margin: 0 auto;
+    padding: 5em 3em;
+    text-align: center;
+    border-radius: 20px;
+    box-shadow: 0px 1px 25px 20px white;
+    background: radial-gradient(green 20%,dodgerblue 50%,firebrick,firebrick);
+}
+
+header h1 {
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.text-p, p {
+    font-family: "Luxurious Roman";
+    font-size: 20px;
+    font-weight: bold;
+    color:  white;
+}
+
+h2 {
+    font-family: "Luxurious Roman";
+    font-weight: bold;
+    color: white;
+}
+
+ol li {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    font-family: "Luxurious Roman";
+}
+
+div.p {
+    font-size: 10px;
+}
+
+footer span {
+    font-weight: bold;
+  color: white;
+}
+
+
+.col-custome {
+    width: 65%;
+}
+
+.table {
+    background: black;
+}
+
+.ms-auto {
+    padding-right: 9rem;
+}
+
+.page-home {
+    padding-top: 4rem;
+    display: flex;
+    text-align: center;
+}
+
+.col-md-6 {
+    height: 300px;
+    width: 50%;
+    padding: 0 5px;
+}
+
+.col-md-6 video, source {
+    height: 100%;
+    width: 100%;
+    box-shadow: 0px 1px 25px 20px white;
+}
+.col-md-6 img {
+    width: 80%;
+    height: 100%;
+    box-shadow: 0px 1px 25px 20px white;
+}
+
+.imagebox {
+    box-shadow: 0px 1px 25px 20px white;
+}
+
+.menu-navbar {
+    font-family: Raleway;
+	padding: 15px 0;
+    box-shadow: 0px 19px 10px dodgerblue;
+    background: #f44336;
+}
+
+.menu-navbar a {
+    color: #FFF;
+    text-decoration: none;
+    font: 20px Raleway;
+    position: relative;
+    z-index: 0;
+    cursor: pointer;
+}
+
+/* Top and Bottom borders go out */
+.menu-navbar a:before,
+.menu-navbar a:after {
+    position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 2px;
+    background: #FFF;
+    color: #fff;
+    content: "";
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.menu-navbar a:before {
+    top: 0px;
+    transform: translateY(10px);
+}
+
+.menu-navbar a:after {
+    bottom: 0px;
+    transform: translateY(-10px);
+}
+
+.menu-navbar a:hover:before,
+.menu-navbar a:hover:after{
+    opacity: 1;
+    transform: translateY(0px);
+}
